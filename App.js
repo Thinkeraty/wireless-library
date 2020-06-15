@@ -20,29 +20,28 @@ const TabNavigator = createBottomTabNavigator({
   Search: {screen: SearchBook}
 },
   {
-    defaultNavigationOptions: ({navigation}) => {
+    defaultNavigationOptions: ({navigation}) =>
       ({
-        tabBarIcon: ({}) => {
+        tabBarIcon: () => {
           const routeName = navigation.state.routeName;
 
           if(routeName === 'Transaction') {
             return (
               <Image 
                 source={require('./assets/book.png')}
-                style={{width: 80, height: 80}}
+                style={{width: 40, height: 40}}
               />
             )
           } else if(routeName === 'Search') {
             return(
               <Image 
                 source={require('./assets/searchingbook.png')}
-                style={{width: 80, height : 80}}
+                style={{width: 40, height : 40}}
               />
             )
           }
         }
       })
-    }
   }
 )
 
