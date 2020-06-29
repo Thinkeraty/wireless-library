@@ -104,28 +104,31 @@ export default class SearchBook extends React.Component {
     }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
     searchBar: {
         flexDirection: 'row',
         height: 40, 
         width: 'auto',
-        borderWidth: 0.5,
+        borderWidth: 0,
         alignItems: 'center', 
-        backgroundColor: 'grey',
+        backgroundColor: 'white',
         marginTop: 100
     },
     searchInput: {
         borderWidth: 2,
-        height: 30,
+        height: 50,
         width: 300,
-        paddingLeft: 10 
+        paddingLeft: 10,
+        borderRadius: 5 
     },
     searchBtn: {
         borderWidth: 1, 
-        height: 30,
-        width: 50,
+        height: 50,
+        width: 100,
         alignItems: 'center', 
         justifyContent: 'center',
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        marginLeft: 20,
+        borderRadius: 5
     }
 })
